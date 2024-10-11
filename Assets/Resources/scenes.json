@@ -1,0 +1,197 @@
+{
+    "scenes": [
+      {
+        "scene": "1",
+        "ramifications": [
+          {
+            "sound": "def",
+            "background": "croom",
+            "storyText": "Начало игры.NF Выберите пример игры.",
+            "variants": [
+              {
+                "text": "DokiDoki",
+                "statNeed": [ "" ],
+                "statNeedAction": "show",
+                "isOptional": false,
+                "isFinalFrame": true,
+                "statGet": [ "" ],
+                "specialSceneLinks": [],
+                "defaultLink": [ "2", "Переходим" ]
+              },
+              {
+                "text": "NoText",
+                "statNeed": [ "" ],
+                "statNeedAction": "show",
+                "isOptional": false,
+                "isFinalFrame": false,
+                "statGet": [ "" ],
+                "specialSceneLinks": [],
+                "defaultLink": [ "1", "" ]
+              }
+            ],
+            "npcs": []
+          }
+        ]
+      },
+      {
+        "scene": "2",
+        "ramifications": [
+          {
+            "sound": "2",
+            "background": "class",
+            "storyText": "День в школе проходит как обычно. Ничего выдающегося.NF Собрав вещи после уроков, я какоето время туплю в стену. Ничего не хочется делать, всё лень.NF \"Клубы...\"NF Сайори хочет, чтобы я заглянул в пару клубов.NF Деваться некуда. Начать, видимо, придётся с клуба анимешников...NF \"Ты тут?\"NF \"Сайори?\"NF Я так задумался, что даже не заметил, как она вошла.NF Оглянувшись, я вижу, что остался в классе последним.NF \"Я думала поймать тебя на выходе, а потом увидела, как ты сидишь, весь такой задумчивый... вот и зашла.\"NF \"Тебе не стоитло меня дожидатся. Ты ведь так можешь в свой клуб опоздать.\"NF \"Мне тут пришло в голову, ну...\"NF \"Что?\"NF \"Что ты мог бы сходить со мной. В мой клуб!",
+            "variants": [
+              {
+                "text": "Да",
+                "statNeed": [ "" ],
+                "statNeedAction": "show",
+                "isOptional": false,
+                "isFinalFrame": false,
+                "statGet": [ "yes" ],
+                "specialSceneLinks": [],
+                "defaultLink": [ "1", "" ]
+              },
+              {
+                "text": "Нет",
+                "statNeed": [ "" ],
+                "statNeedAction": "show",
+                "isOptional": false,
+                "isFinalFrame": true,
+                "statGet": [ "no" ],
+                "specialSceneLinks": [],
+                "defaultLink": [ "3", "" ]
+              }
+            ],
+            "npcs": [
+              {
+                "name": "Sayori",
+                "side": "mid",
+                "turn": [ 6, 7, 8, 9, 10, 11, 12, 13, 14 ],
+                "sprites": [ "say11", "say11", "say11", "say11", "say11", "say11", "say11", "say11", "say12" ],
+                "replicas": [ 6, 10, 12, 14 ]
+              }
+            ]
+          },
+          {
+            "sound": "2",
+            "background": "class",
+            "storyText": "\"Ну...\"NF \"Почему бы не попробовать.\"NF \"Ура ты согласен! Тогда пошли скорее.\"",
+            "variants": [
+              {
+                "text": "def",
+                "statNeed": [ "" ],
+                "statNeedAction": "show",
+                "isOptional": false,
+                "isFinalFrame": true,
+                "statGet": [ "" ],
+                "specialSceneLinks": [],
+                "defaultLink": [ "4", "" ]
+              }
+            ],
+            "npcs": [
+              {
+                "name": "Sayori",
+                "side": "mid",
+                "turn": [ 1, 2, 3 ],
+                "sprites": [ "ori11", "ori22", "say14" ],
+                "replicas": [ 3 ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "scene": "3",
+        "ramifications": [
+          {
+            "sound": "sayori",
+            "background": "class",
+            "storyText": "\"Нет\"NF \"Нет?\"NF \"Я не собираюсь вступать в какой либо клуб. Мне и дома хорошо.\"NF \"Ну ладно, тогда я пошла в клуб\"NF После ухода Сайори я решил тоже уже выходить.",
+            "variants": [
+              {
+                "text": "def",
+                "statNeed": [ "" ],
+                "statNeedAction": "show",
+                "isOptional": false,
+                "isFinalFrame": true,
+                "statGet": [ "" ],
+                "specialSceneLinks": [],
+                "defaultLink": [ "4", "" ]
+              }
+            ],
+            "npcs": [
+              {
+                "name": "Sayori",
+                "side": "mid",
+                "turn": [ 1, 2, 3, 4 ],
+                "sprites": [ "ori11", "ori21", "ori11", "ori12" ],
+                "replicas": [ 2, 4 ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "scene": "4",
+        "ramifications": [
+          {
+            "sound": "DokiDoki1",
+            "background": "corridor",
+            "storyText": "\"...\"",
+            "variants": [
+              {
+                "text": "def",
+                "statNeed": [ "" ],
+                "statNeedAction": "show",
+                "isOptional": false,
+                "isFinalFrame": true,
+                "statGet": [],
+                "specialSceneLinks": [
+                  {
+                    "statNeed": [ "yes" ],
+                    "isOptional": false,
+                    "isFinalFrame": true,
+                    "afterSceneText": "",
+                    "link": "f1"
+                  },
+                  {
+                    "statNeed": [ "no" ],
+                    "isOptional": false,
+                    "isFinalFrame": true,
+                    "afterSceneText": "",
+                    "link": "f2"
+                  }
+                ],
+                "defaultLink": [ "4", "" ]
+              }
+            ],
+            "npcs": []
+          }
+        ]
+      }
+    ],
+  "finals": [
+    {
+      "scene": "f1",
+      "ramifications": [
+        {
+          "sound": "DokiDoki1",
+          "background": "corridor",
+          "storyText": "\"Добро пожаловать в литературный клуб!\"",
+          "npcs": []
+        }
+      ]
+    },
+    {
+      "scene": "f2",
+      "ramifications": [
+        {
+          "sound": "DokiDoki1",
+          "background": "corridor",
+          "storyText": "\"Ладно с клубами может решу позже.\"NF \"А сейчас домой.\"",
+          "npcs": []
+        }
+      ]
+    }
+  ]
+}

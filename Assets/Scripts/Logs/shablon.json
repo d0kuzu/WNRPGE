@@ -1,0 +1,141 @@
+{
+  "scenes": [
+    {
+      "scene": "0",
+      "background": "croom",
+      "ramifications": [
+        {
+          "storyText": "Я был дома.NF asdasdNF assas",
+          "variants": [
+            {
+              "text": "sui",
+              "statNeed": [ "" ],
+              "statNeedAction": "show",
+              "isOptional": true,
+              "isFinalFrame": false,
+              "statGet": [  ],
+              "specialSceneLinks": [
+                {
+                  "statNeed": [ "ggwp" ],
+                  "isOptional": false,
+                  "isFinalFrame": true,
+                  "afterSceneText": "asd",
+                  "link": "f1"
+                }
+              ],
+              "defaultLink": [ "1", "suuuuui..." ]
+            }
+          ],
+          "npcs": [
+            {
+              "name": "Yukiko",
+              "side": "left",
+              "turn": [ 1, 3 ],
+              "sprites": [ 1, 1 ],
+              "replicas": [ 3 ]
+            },
+            {
+              "name": "Yukiko",
+              "side": "mid",
+              "turn": [ 1, 2, 3 ],
+              "sprites": [ 1, 1, 1 ],
+              "replicas": [ 2 ]
+            },
+            {
+              "name": "Yukiko",
+              "side": "right",
+              "turn": [ 1, 3 ],
+              "sprites": [ 1, 1 ],
+              "replicas": []
+            }
+          ]
+        },
+        {
+          "storyText": "Иду по коридору и..NF И вижу это",
+          "variants": [
+            {
+              "text": "уйти",
+              "statNeed": [ "" ],
+              "statNeedAction": "show",
+              "isOptional": true,
+              "isFinalFrame": true,
+              "statGet": [ "ggwp" ],
+              "specialSceneLinks": [
+                {
+                  "statNeed": [ "gg", "wp" ],
+                  "isOptional": false,
+                  "isFinalFrame": false,
+                  "afterSceneText": "asd",
+                  "link": "spec1"
+                }
+              ],
+              "defaultLink": [ "0", "suuuuui..." ]
+            },
+            {
+              "text": "остатся",
+              "statNeed": [ "" ],
+              "statNeedAction": "show",
+              "isOptional": false,
+              "isFinalFrame": false,
+              "statGet": [ "" ],
+              "specialSceneLinks": [
+                {
+                  "statNeed": [ "gg", "wp" ],
+                  "isOptional": true,
+                  "isFinalFrame": false,
+                  "afterSceneText": "asd",
+                  "link": "spec2"
+                }
+              ],
+              "defaultLink": [ "def2", "suuuuui..." ]
+            }
+          ],
+          "npcs": [
+            {
+              "name": "Yukiko",
+              "side": "left",
+              "turn": [ 1, 2 ],
+              "sprites": [ 1, 1 ],
+              "replicas": [ 2 ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "finals": [
+    {
+      "scene": "f1",
+      "background": "croom",
+      "ramifications": [
+        {
+          "storyText": "Я был дома.NF asdasdNF assas",
+          "variants": [],
+          "npcs": [
+            {
+              "name": "Yukiko",
+              "side": "left",
+              "turn": [ 1, 3 ],
+              "sprites": [ 1, 1 ],
+              "replicas": [ 3 ]
+            },
+            {
+              "name": "Yukiko",
+              "side": "mid",
+              "turn": [ 1, 2, 3 ],
+              "sprites": [ 1, 1, 1 ],
+              "replicas": [ 2 ]
+            },
+            {
+              "name": "Yukiko",
+              "side": "right",
+              "turn": [ 1, 3 ],
+              "sprites": [ 1, 1 ],
+              "replicas": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

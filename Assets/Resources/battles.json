@@ -1,0 +1,46 @@
+[
+  {
+    "scene": "b0",
+    "backgrounds": [ "battle_bg", "battle_bg", "battle_bg" ],
+    "waves": [
+      {
+        "mobs": [ "HeavyBandit", "LightBandit", "HeavyBandit" ],
+        "mobsPositions": [ "11", "12", "13" ],
+        "spawn": 10
+      }
+    ]
+  },
+  {
+    "scene": "b1",
+    "backgrounds": [ "battle_bg", "battle_bg", "battle_bg" ],
+    "waves": [
+      {
+        "mobs": [ "HeavyBandit" ],
+        "mobsPositions": [ "11" ],
+        "spawn": 10
+      }
+    ]
+  },
+  {
+    "scene": "b2",
+    "backgrounds": [ "battle_bg", "battle_bg", "battle_bg" ],
+    "waves": [
+      {
+        "mobs": [ "HeavyBandit", "LightBandit" ],
+        "mobsPositions": [ "11", "12" ],
+        "spawn": 10
+      }
+    ]
+  },
+  {
+    "scene": "b3",
+    "backgrounds": [ "battle_bg", "battle_bg", "battle_bg" ],
+    "waves": [
+      {
+        "mobs": [ "HeavyBandit", "LightBandit", "HeavyBandit", "LightBandit", "HeavyBandit", "LightBandit", "HeavyBandit", "LightBandit" ],
+        "mobsPositions": [ "11", "12", "13", "14", "21", "22", "23", "24" ],
+        "spawn": 10
+      }
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "name": "HeavyBandit",
+    "currentHp": "100",
+    "hp": "40",
+    "damage": 15
+  },
+  {
+    "name": "LightBandit",
+    "currentHp": "100",
+    "hp": "40",
+    "damage": 10
+  }
+]
